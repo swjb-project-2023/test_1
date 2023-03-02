@@ -1,0 +1,220 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+  float: left;
+  position: absolute;
+  top: 45px;
+  left: 120px;
+  margin: 0 auto;
+}
+
+.yaer{
+  width: 80vw;
+  margin: 0 auto;
+}
+
+header{
+  width: 80vw;
+  height: 100px;
+  position: relative;
+  float: left;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+header > span {
+  
+  text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.15);
+  font-size: 22px;
+  font-weight:600;
+}
+
+header h1{
+  float: left;
+  position: absolute;
+  top: 35px;
+  left: 46.5%;
+  transform: translateY(-50%);
+}
+
+header .search-box{
+  float: left;
+  position: absolute;
+  top: 40px;
+  right: 120px;
+}
+
+.search-box .search{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.search input {
+  width: 100%;
+  height: 33px;
+  padding: 5px 0px 0px 7px;
+  border-radius: 20px;
+  border: 0;
+  background-color: #F7FBFD;
+  box-shadow: inset 4px 3px 5px 0px rgba(149, 157, 160, 0.43), 1px 0.7px 1px 0px rgba(149, 157, 160, 0.42);
+}
+
+.search span{
+  position: absolute;
+  top : 8px;
+  right: 10px;
+  color: #006AA8;
+  font-weight:600;
+}
+
+.contents{
+  width: 100%;
+}
+
+.project_card{
+  float: left;
+  display: grid;
+  grid-template-columns: repeat(4,minmax(300px,1fr));
+  grid-template-rows: repeat(auto);
+  padding: 10px;
+}
+
+.project_box{
+  position: relative;
+  float: left;
+  margin: 10px;
+  width: 300px;
+  height: 271.62px;
+  border-radius: 7px;
+  box-shadow: inset 0.7px 0.7px 5px 0px rgba(149, 157, 160, 0.3), 4px 5px 7px 0px rgba(149, 157, 160, 0.6);
+  background-color: #F7FBFD;
+}
+
+.project_box .img_box img{
+  object-fit: cover;
+  box-sizing: border-box;
+  width: 260.27px;
+  height: 146.76px;
+  margin-left: 21px;
+  margin-top: 17px; 
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+}
+
+.project_box h2{
+  margin-left: 20px;
+  margin-right: 10px;
+  margin-top: 8px;
+}
+
+.project_box .fix-box {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.project_box .fix-box .delete{
+  width: 68px;
+  height: 32px;
+  border: 0;
+  border-radius: 3px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 15px;
+  background-color: #FD6059;
+  box-shadow: 4px 3px 5px 0px rgba(0, 0, 0, 0.17) inset;
+  margin-right: 3px;
+  margin-bottom: 3px;
+}
+
+.project_box .fix-box .fix{
+  width: 68px;
+  height: 32px;
+  border: 0;
+  border-radius: 3px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 15px;
+  background-color: #34C85A;
+  box-shadow: 4px 3px 5px 0px rgba(0, 0, 0, 0.2) inset;
+  margin-right: 3px;
+  margin-bottom: 3px;
+}
+
+.project_box .fix-box .accepted{
+  width: 68px;
+  height: 32px;
+  border: 0;
+  border-radius: 3px;
+  color: #fff;
+  font-weight:bold;
+  font-size: 15px;
+  background-color: #B4B4B4;
+  box-shadow: 4px 3px 5px 0px rgba(0, 0, 0, 0.2) inset;
+  margin-right: 3px;
+  margin-bottom: 3px;
+}
+
+
+/* 메세지 박스 */
+.msg_box{
+  position: fixed;
+  left:50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+  z-index: 100;;
+  width: 500px;
+  height: 200px;
+  display: none;
+  border: 0;
+  background-color: #fff;
+  box-shadow: 3px 3px 25px 13px rgba(0, 0, 0, 0.33);
+}
+
+.msg_box p {
+  width: 100%;
+  margin-top: 45px;
+  font-size: 20px;
+  margin-left: 150px;
+}
+
+.msg_box .button-box{
+  width: 100%;
+  height: 150px;
+  position: relative;
+}
+
+.msg_box button{
+  width: 100px;
+  height: 30px;
+  border: 0;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 70px;
+  right: 250px;
+}
+
+.msg_box button:last-child{
+  right: 140px;
+}
+
+.msg_box .yes{
+  background-color: #0075E8;
+  color: #fff;
+  box-shadow: 2px 1px 5px 0px rgba(0, 0, 0, 0.1) inset;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.msg_box .no{
+  background-color: #ddd;
+  box-shadow: 2px 1px 5px 0px rgba(0, 0, 0, 0.1) inset;
+  font-weight: bold;
+  font-size: 14px;
+}
